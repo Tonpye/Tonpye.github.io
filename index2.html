@@ -11,9 +11,27 @@
         body {
         background-image: url("imagens/cloudpattern.jpg");
         background-repeat: repeat;
-        background-size: contain;
         background-size: 400px;
-        translate: 0px 300px;;
+        animation: bgmove 150000s linear infinite;
+        margin: 0;
+        padding: 0;
+        height: 10px;
+        }
+        @keyframes bgmove {
+            0% {background-position: 0;}
+            100% {background-position: 10000000px;}
+        }
+    </style>
+    <div align="center">
+    <style>
+        div {
+        position: relative;
+        animation: letracimabaixo 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes letracimabaixo {
+            0%      {bottom: 0px;}
+            100%    {bottom: 40px;}
         }
     </style>
     <style>
@@ -23,13 +41,16 @@
         font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         -webkit-text-stroke: 1px white;
         }
-
-
-
     </style>
         <h1 align="center">
             <a href="index.html">
                 Retornar
             </a>
         </h1>
+        <audio src="imagens/yshland.mp3" controls autoplay preload="auto">
+            <script>
+                audioElement.play();
+            </script>
+        </audio>
+    </div>
 </body>
